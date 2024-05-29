@@ -95,7 +95,6 @@ voice_assistant:
           media_content_type: music
           announce: "true"
     - delay: 5s  # Adjust the delay as needed                 
-    - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};  
   on_end:
     - delay: 100ms
     - wait_until:
