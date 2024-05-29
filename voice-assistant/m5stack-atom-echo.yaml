@@ -95,12 +95,12 @@ voice_assistant:
           media_content_type: music
           announce: "true"
     - delay: 5s  # Adjust the delay as needed                 
-  on_end:
-    - delay: 100ms
-    - wait_until:
-        not:
-          speaker.is_playing:
-    - script.execute: reset_led
+  # on_end:
+  #   - delay: 100ms
+  #   - wait_until:
+  #       not:
+  #         speaker.is_playing:
+  #   - script.execute: reset_led
   on_error:
     - light.turn_on:
         id: led
